@@ -23,6 +23,7 @@ option(W2L_BUILD_SCRIPTS "Build internal scripts for wav2letter++" OFF)
 option(W2L_BUILD_RECIPES "Build recipes" ON)
 option(W2L_BUILD_TOOLS "Build audio tools" OFF)
 set(KENLM_MAX_ORDER 6 CACHE STRING "Maximum ngram order for KenLM")
+add_compile_definitions(THRUST_IGNORE_CUB_VERSION_CHECK)
 
 # ------------------------- Dependency Fallback -------------------------
 

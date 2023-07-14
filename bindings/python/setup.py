@@ -61,6 +61,10 @@ class CMakeBuild(build_ext):
             "-DW2L_LIBRARIES_USE_CUDA=" + use_cuda,
             "-DW2L_LIBRARIES_USE_KENLM=" + use_kenlm,
             "-DW2L_LIBRARIES_USE_MKL=" + use_mkl,
+        "-DCMAKE_INCLUDE_PATH="+"/home/tuannn/self-supervised-speech-recognition/libs/kenlm",
+        "-DKENLM_LIB="+"/home/tuannn/self-supervised-speech-recognition/libs/kenlm",
+        "-DKENLM_UTIL_LIB="+"/home/tuannn/self-supervised-speech-recognition/libs/kenlm/util",
+        "-DKENLM_INC="+"/home/tuannn/self-supervised-speech-recognition/libs/kenlm/lm",
         ]
 
         cfg = "Debug" if self.debug else "Release"

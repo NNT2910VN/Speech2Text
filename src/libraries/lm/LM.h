@@ -13,6 +13,8 @@
 #include <unordered_map>
 #include <utility>
 #include <vector>
+#include <stdexcept>
+
 
 namespace w2l {
 

@@ -14,6 +14,7 @@
 #include <vector>
 
 #include "libraries/lm/LM.h"
+#include <limits>
 
 namespace w2l {
 
